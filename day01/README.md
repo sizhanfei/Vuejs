@@ -3,9 +3,9 @@
 
 ## 知识点
 
-* html5文档
+* html5的基础知识
 * vue.js导入
-* Vue对象
+* Vue对象的创建
 
 ## index.html
 
@@ -36,6 +36,29 @@ var myApp = new Vue({
 });
 ~~~
 
-## 源文件
+## 完整代码
+~~~
+<!DOCTYPE html>
+<html lang="zh">
 
-* https://git.oschina.net/komavideo/LearnVueJS
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="myApp"> {{ message }} </div>
+    <script>
+        var myApp = new Vue({
+            el: '#myApp'
+            , data: {
+                message: 'Hello World! from szftime'
+            }
+        });
+    </script>
+</body>
+
+</html>
+~~~
