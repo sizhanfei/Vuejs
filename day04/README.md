@@ -27,7 +27,7 @@
         },
         methods: {
             btnClick: function(pname){
-                this.mygame = pname;<!--将获取的值传给mygame变量-->
+                this.mygame = pname;/* 将获取的值传给mygame变量 */
             },
         },
     });
